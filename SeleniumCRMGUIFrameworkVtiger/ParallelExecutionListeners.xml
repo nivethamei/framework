@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite   thread-count="2" name="Suite" parallel="true">
+	<listeners>
+		<listener class-name="com.Vtiger.Listeners.ListenersImpementation">
+	   </listener>
+     </listeners>
+  <test  name="Test">
+<classes>
+      <class name="com.Vtiger.ContactTest.ToCreateContactTest"/>
+      <class name="com.Vtiger.OrgTest.CreateOrgWithIndustryAndTypeDropdownTest"/>
+      <class name="com.Vtiger.ContactTest.CreateContactWithSupportDateTest"/>
+      <class name="com.Vtiger.ContactTest.CreateContactWithOrgTest"/>
+ </classes>
+ </test>
+ <test name="Test1">
+      <classes>
+      <class name="com.Vtiger.OrgTest.ToCreateOrgTest"/>
+      <class name="com.Vtiger.OrgTest.ToDeleteOrgTest"/>
+      <class name="com.Vtiger.OrgTest.CreateOrgWithPhonenumberTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
